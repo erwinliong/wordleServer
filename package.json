@@ -2,7 +2,7 @@
   "name": "wordleserver",
   "version": "0.0.0",
   "scripts": {
-    "build": "rimraf ./build && ./node_modules/.bin/ts-node build.ts",
+    "build": "./node_modules/.bin/ts-node build.ts",
     "lint": "eslint . --ext .ts",
     "start": "npm run build && node -r module-alias/register ./dist --env=production",
     "start:dev": "nodemon",
