@@ -4,6 +4,7 @@ const schema = buildSchema(`
     type Query {
         books(limit: Int): [Book]
         book(id: ID!): Book
+        allWords: [String]
     }
     type Mutation {
         addBook(title: String!, author: String!, description: String!): BookResponse
