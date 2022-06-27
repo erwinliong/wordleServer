@@ -2,9 +2,9 @@
   "name": "wordleserver",
   "version": "0.0.0",
   "scripts": {
-    "build": "./node_modules/.bin/ts-node build.ts",
+    "build": "rimraf ./build && ./node_modules/.bin/ts-node build.ts",
     "lint": "eslint . --ext .ts",
-    "start": "node -r module-alias/register ./dist --env=production",
+    "start": "npm run build && node -r module-alias/register ./dist --env=production",
     "start:dev": "nodemon",
     "test": "nodemon --config ./spec/nodemon.json",
     "test:no-reloading": "./node_modules/.bin/ts-node -r tsconfig-paths/register ./spec"
@@ -96,6 +96,7 @@
     "fs-extra": "^10.1.0",
     "jasmine": "^4.2.1",
     "nodemon": "^1.3.3",
+    "rimraf": "^3.0.2",
     "supertest": "^6.2.3",
     "ts-node": "^10.8.1",
     "tsconfig-paths": "^4.0.0",
