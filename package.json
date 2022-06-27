@@ -1,0 +1,24 @@
+{
+  "name": "wordleserver",
+  "version": "1.0.0",
+  "description": "My Wordle Server through GraphQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erwinliong/wordleServer.git"
+  },
+  "keywords": [
+    "wordle",
+    "graphql",
+    "nodejs"
+  ],
+  "author": "Erwin Liong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erwinliong/wordleServer/issues"
+  },
+  "homepage": "https://github.com/erwinliong/wordleServer#readme"
+}
