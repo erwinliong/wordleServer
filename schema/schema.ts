@@ -2,8 +2,8 @@ import { buildSchema } from 'graphql';
 
 const schema = buildSchema(`
     type Query {
-        // books(limit: Int): [Book]
-        // book(id: ID!): Book
+        books(limit: Int): [Book]
+        book(id: ID!): Book
         allWords: [String]
         wordOfTheDay(index: Int!): String
     }
