@@ -5,7 +5,7 @@ const schema = buildSchema(`
         books(limit: Int): [Book]
         book(id: ID!): Book
         allWords: [String]
-        wordOfTheDay(index: Int!): [Int]
+        wordOfTheDay(index: Int!, input: String!): [Int]
     }
     type Mutation {
         addBook(title: String!, author: String!, description: String!): BookResponse

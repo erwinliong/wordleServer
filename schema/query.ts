@@ -28,6 +28,10 @@ const query = {
         return result as string[];
     },
     wordOfTheDay: async (args: any) => {
+        let wordIndex = args.index;
+        let wordInput = args.input;
+        console.log("index: " + wordIndex);
+        console.log("input: " + wordInput);
         return [-1, 0, 0, 1, -1];
     },
 };
